@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Ensure proper scaling on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nilesh SN Shinde - Resources</title>
+  <!-- Google Font for a modern, soothing look -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+    /* Global Styles */
     body {
       font-family: 'Merriweather', Georgia, "Times New Roman", serif;
       margin: 0;
@@ -16,16 +20,15 @@
       line-height: 1.6;
     }
     header {
-      background: #f8f8f8;
+      background: #f8f8f8; /* Light background for readability */
       padding: 20px;
       border-bottom: 1px solid #ddd;
       text-align: center;
     }
-    header h1, h2 {
+    header h1 {
       margin: 0;
       font-size: 1.8em;
-      color: #990000;
-      font-family: 'Merriweather', Georgia, "Times New Roman", serif;
+      color: #990000; /* IU Crimson */
     }
     nav {
       margin-top: 10px;
@@ -33,7 +36,7 @@
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #000;
+      color: #000; /* Changed to black */
       font-weight: bold;
     }
     nav a:hover {
@@ -45,9 +48,11 @@
       padding: 0 20px;
     }
     h2 {
+      color: #990000; /* Section headings in IU Crimson */
       margin-top: 40px;
       padding-bottom: 5px;
       border-bottom: 2px solid #990000;
+      font-size: 1.8em;
     }
     .marker {
       margin-right: 8px;
@@ -62,11 +67,12 @@
       position: relative;
     }
     ul li::before {
-      content: "\2022";
+      content: "•";
       position: absolute;
       left: 0;
-      color: #990000;
+      color: #990000; /* Bullet points in IU Crimson */
     }
+    /* Link styling */
     a {
       color: #990000;
       text-decoration: none;
@@ -75,18 +81,23 @@
     a:hover {
       text-decoration: underline;
     }
+    /* Override links inside the main container to be black */
     .container a {
       color: black;
     }
     .container a:hover {
       text-decoration: underline;
     }
+    /* Responsive adjustments for mobile */
     @media (max-width: 600px) {
-      header h1, h2 {
+      header h1 {
         font-size: 1.5em;
       }
       nav a {
         margin: 0 10px;
+      }
+      h2 {
+        font-size: 1.5em;
       }
     }
   </style>
@@ -102,19 +113,48 @@
     </nav>
   </header>
   <div class="container">
+    <!-- Econometrics: Theory & Applications -->
     <section>
       <h2><i class="fas fa-chart-line marker"></i> Econometrics: Theory &amp; Applications</h2>
       <ul>
-        <li><a href="#">DID Reading Group</a></li>
-        <li><a href="#">Online Causal Inference Seminar</a></li>
-        <li><a href="#">Library of Statistical Techniques (LOST)!</a></li>
+        <li><a href="https://taylorjwright.github.io/did-reading-group/" target="_blank">DID Reading Group</a></li>
+        <li><a href="https://sites.google.com/view/ocis/home" target="_blank">Online Causal Inference Seminar</a></li>
+        <li><a href="https://lost-stats.github.io/" target="_blank">Library of Statistical Techniques (LOST)!</a></li>
+        <li><a href="https://scunning.com/mixtape.html" target="_blank">Causal Inference Mixtapes</a></li>
+        <li><a href="https://www.discretechoicemethods.com/" target="_blank">Discrete Choice Methods with Simulation</a></li>
+        <li>Python Econ Tools: 
+          <a href="https://econ-ark.org/" target="_blank">Econ-ARK</a>, 
+          <a href="https://quantecon.org/" target="_blank">QuantEcon</a>
+        </li>
       </ul>
     </section>
+    <!-- Online Learning & References -->
     <section>
       <h2><i class="fas fa-graduation-cap marker"></i> Online Learning &amp; References</h2>
       <ul>
-        <li><a href="#">Econometrics in R</a></li>
-        <li><a href="#">Spatial Analysis Blog</a></li>
+        <li><a href="https://dhsprogram.com/" target="_blank">Automated Processing of Demographic and Health Surveys</a></li>
+        <li><a href="https://bookdown.org/ccolonescu/RPoE4/" target="_blank">Econometrics in R</a></li>
+        <li><a href="https://spatialanalysis.github.io/" target="_blank">Spatial Analysis Blog</a></li>
+        <li><a href="https://mleconomics.github.io/" target="_blank">Machine Learning in Economics</a></li>
+        <li><a href="https://www.economicsanddatascience.org/" target="_blank">Economics and Data Science</a></li>
+      </ul>
+    </section>
+    <!-- Coding Tools -->
+    <section>
+      <h2><i class="fas fa-code marker"></i> Coding Tools</h2>
+      <ul>
+        <li><a href="https://datacarpentry.org/stata-economics/" target="_blank">Big Data Processing in STATA</a></li>
+        <li><a href="https://www.reghdfe.com/" target="_blank">Fast Fixed Effects in OLS and Poisson</a></li>
+        <li><a href="https://github.com/agamm/awesome-developer-first" target="_blank">Awesome Developer-First</a></li>
+      </ul>
+    </section>
+    <!-- GIS Databases -->
+    <section>
+      <h2><i class="fas fa-map marker"></i> GIS Databases</h2>
+      <ul>
+        <li><a href="https://www.aiddata.org/" target="_blank">AID Database</a></li>
+        <li><a href="https://www.geoboundaries.org/" target="_blank">geoBoundaries</a></li>
+        <li><a href="https://gee-community-catalog.org/" target="_blank">awesome-gee-community-catalog</a></li>
       </ul>
     </section>
   </div>
