@@ -3,7 +3,7 @@
 This is the official research portfolio of **Nilesh SN Shinde**, hosted on **GitHub Pages**. The website showcases my academic research, projects, and professional background, along with useful resources in environmental and resource economics.
 
 ## 🌐 Live Website
-[Visit My Research Portfolio](https://enre-nilesh.github.io/)  
+[Visit My Research Portfolio](https://n-nshinde.github.io/)  
 
 ---
 
