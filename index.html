@@ -47,9 +47,15 @@
       margin: 40px auto;
       padding: 0 20px;
     }
+    /* New wrapper for profile and content */
+    .profile-content-wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
     .profile {
+      flex: 0 0 auto;
       text-align: center;
-      margin-bottom: 40px;
     }
     .profile img {
       max-width: 200px;
@@ -69,6 +75,9 @@
     }
     .profile a:hover {
       text-decoration: underline;
+    }
+    .content {
+      flex: 1;
     }
     .content h2 {
       color: #990000;
@@ -119,11 +128,14 @@
       header h1 {
         font-size: 2em;
       }
-      .content h2 {
-        font-size: 1.5em;
-      }
       nav a {
         margin: 0 10px;
+      }
+      .profile-content-wrapper {
+        flex-direction: column;
+      }
+      .content h2 {
+        font-size: 1.5em;
       }
     }
   </style>
@@ -139,38 +151,40 @@
     </nav>
   </header>
   <div class="container">
-    <div class="profile">
-      <img src="Shinde_Close_Up.png" alt="Nilesh SN Shinde">
-      <h2>Assistant Professor</h2>
-      <p>
-        <a href="https://oneill.indiana.edu/index.html" target="_blank">
-          O’Neill School of Public &amp; Environmental Affairs
-        </a>
-        <br>
-        <a href="https://bloomington.iu.edu/index.html" target="_blank">
-          Indiana University Bloomington
-        </a>
-      </p>
-    </div>
-    <div class="content">
-      <h2></h2>
-      <p>
-        Welcome to my webpage, I am currently a Postdoctoral Research Associate in the Department of Resource Economics at the University of Massachusetts Amherst, working with 
-        <a href="https://sites.google.com/site/dkeiserecon/home" target="_blank">Prof. David Keiser</a>.
-      </p>
-      <p>
-        Starting Fall 2025, I will join the O’Neill School of Public and Environmental Affairs (SPEA) at Indiana University Bloomington as an Assistant Professor.
-      </p>
-      <p>
-        My research focuses on the intersection of human and environmental systems, with special attention to health, land use, and water resources. My goals include:
-      </p>
-      <ul>
-        <li>Evaluating the economic and health impacts of land and water policies.</li>
-        <li>Developing Integrated Assessment Models (IAMs) to address water quality challenges, particularly nutrient pollution.</li>
-      </ul>
-      <p>
-        I earned a Ph.D. in Natural Resource Economics and Environmental Informatics from Virginia Tech (USA) and hold degrees in Development Economics (from Brazil) and Mechanical Engineering (from India).
-      </p>
+    <div class="profile-content-wrapper">
+      <div class="profile">
+        <img src="Shinde_Close_Up.png" alt="Nilesh SN Shinde">
+        <h2>Assistant Professor</h2>
+        <p>
+          <a href="https://oneill.indiana.edu/index.html" target="_blank">
+            O’Neill School of Public &amp; Environmental Affairs
+          </a>
+          <br>
+          <a href="https://bloomington.iu.edu/index.html" target="_blank">
+            Indiana University Bloomington
+          </a>
+        </p>
+      </div>
+      <div class="content">
+        <h2></h2>
+        <p>
+          Welcome to my webpage, I am currently a Postdoctoral Research Associate in the Department of Resource Economics at the University of Massachusetts Amherst, working with 
+          <a href="https://sites.google.com/site/dkeiserecon/home" target="_blank">Prof. David Keiser</a>.
+        </p>
+        <p>
+          Starting Fall 2025, I will join the O’Neill School of Public and Environmental Affairs (SPEA) at Indiana University Bloomington as an Assistant Professor.
+        </p>
+        <p>
+          My research focuses on the intersection of human and environmental systems, with special attention to health, land use, and water resources. My goals include:
+        </p>
+        <ul>
+          <li>Evaluating the economic and health impacts of land and water policies.</li>
+          <li>Developing Integrated Assessment Models (IAMs) to address water quality challenges, particularly nutrient pollution.</li>
+        </ul>
+        <p>
+          I earned a Ph.D. in Natural Resource Economics and Environmental Informatics from Virginia Tech (USA) and hold degrees in Development Economics (from Brazil) and Mechanical Engineering (from India).
+        </p>
+      </div>
     </div>
     <div class="social">
       <a href="https://github.com/n-nshinde" target="_blank" title="GitHub">
