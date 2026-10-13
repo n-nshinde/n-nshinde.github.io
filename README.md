@@ -64,7 +64,6 @@ Buy a domain (e.g., nileshshinde.com, ~$12/yr), then GitHub **Settings → Pages
 |---|---|
 | index.html | Home |
 | research.html | Research (theme filters, abstracts) |
-| data-code.html | Data & Code |
 | teaching.html | Teaching + prospective students |
 | workshop.html | Social Cost of Water Pollution Workshop |
 | resources.html | Resources |
