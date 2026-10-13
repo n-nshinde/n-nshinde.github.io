@@ -1,66 +1,71 @@
-# Nilesh SN Shinde - Research Portfolio
+# Nilesh Shinde — academic website
 
-This is the official research portfolio of **Nilesh SN Shinde**, hosted on **GitHub Pages**. The website showcases my academic research, projects, and professional background, along with useful resources in environmental and resource economics.
+Plain HTML + CSS. No build step. Hosted free on GitHub Pages.
 
-## 🌐 Live Website
-[Visit My Research Portfolio](https://n-nshinde.github.io/)  
+## Put it online (one time, ~10 minutes)
 
----
+1. Sign in to GitHub as **n-nshinde**.
+2. Click **+ → New repository**. Name it exactly `n-nshinde.github.io`. Set it to **Public**. Click **Create repository**.
+3. On the new repo page click **uploading an existing file**. Drag in every file from this folder (unzip first). Click **Commit changes**.
+4. Go to **Settings → Pages**. Under "Build and deployment", Source = **Deploy from a branch**, Branch = **main**, folder **/ (root)**. Save.
+5. After 1–2 minutes your site is live at **https://n-nshinde.github.io**.
 
-## 📌 Features
+## Add your files
 
-- 🏛 **Professional Portfolio**: Displays research interests, working papers, publications, and collaborations.
-- 📖 **Research Overview**: Organized sections for different topics, including environmental economics, informatics, and econometrics.
-- 📁 **Resources**: A curated list of econometrics, GIS databases, and coding tools.
-- 🎨 **Customizable Theme**: Uses a modern, responsive design with IU branding elements.
-- 🌍 **GitHub Pages Hosted**: Deployed directly via GitHub Pages for easy access and maintenance.
+- **CV:** upload your CV named `cv.pdf` (the "CV ↓" button links to it).
+- **Photo:** create a folder `images/`, upload `photo.jpg`, then in `index.html` replace
+  `<div class="ph" role="img" aria-label="Photo placeholder">[YOUR PHOTO]</div>`
+  with `<img src="images/photo.jpg" alt="Nilesh Shinde">`.
+- **Paper figures:** in `research.html`, replace a `<div class="fig ph" ...>[MAP]</div>` with
+  `<div class="fig"><img src="images/pnas2023.png" alt=""></div>`.
 
----
+## Paper PDFs
 
-## 🛠 Installation & Setup
+Upload PDFs into the `papers/` folder using these exact names, and the buttons on the Research page will work:
 
-To run this project locally:
+| Paper | File name |
+|---|---|
+| JEEM — Land Registration and Conflict | papers/jeem-land-registration.pdf |
+| Health Affairs Scholar — Primary Care & Weather | papers/has-primary-care-weather.pdf |
+| EDE — Snowpack & Winter Wheat | papers/ede-snowpack-wheat.pdf |
+| JEEM 2025 — Beyond the Canopy | papers/jeem2025-beyond-the-canopy.pdf |
+| FPE 2024 — Tree Plantations | papers/fpe2024-tree-plantations.pdf |
+| PNAS 2023 — Collective Property Rights | papers/pnas2023-collective-property-rights.pdf |
+| R&R JDE — Irrigation & Groundwater Recharge | papers/rr-irrigation-groundwater-recharge.pdf |
+| R&R World Dev — Command-and-Control | papers/rr-groundwater-command-and-control.pdf |
+| WP — Water Pollution Damages | papers/wp-water-pollution-damages.pdf |
+| WP — Clearing to Claim | papers/wp-clearing-to-claim.pdf |
+| WP — Drought-Induced Deforestation | papers/wp-drought-deforestation.pdf |
+| WP — Compliance & Stock Persistence | papers/wp-compliance-stock-persistence.pdf |
+| WP — Local Governance in Brazil | papers/wp-local-governance-brazil.pdf |
+| WP — Forest Disease & Wildfire | papers/wp-forest-disease-wildfire.pdf |
+| WP — Agrarian Cost of Groundwater | papers/wp-groundwater-agrarian-cost.pdf |
+| WP — Drought & Judicial Outcomes | papers/wp-drought-judicial-outcomes.pdf |
+| WP — Superfund & Soil Chemistry | papers/wp-superfund-soil-chemistry.pdf |
 
-### **1️⃣ Clone the Repository**
-```bash
-git clone https://github.com/your-github-username/your-research-portfolio.git
-cd your-research-portfolio
+Not ready to share a draft yet? Delete that paper's Draft button (or change it to `href="mailto:nnshinde@iu.edu"` and text "Request").
 
-### **What People Usually Write for Website Themes on GitHub Pages?**  
+For published papers, check each journal's sharing policy (most allow posting the accepted manuscript; PNAS and Elsevier journals have author-sharing rules). Each PDF must be under 25 MB to upload in the browser.
 
-If someone is building a **custom website theme** from scratch on GitHub Pages, their **README.md** usually includes:  
+## Edit later
 
-✅ **Overview of the Theme** – What it looks like, what it offers  
-✅ **Live Demo** – A link to an example page  
-✅ **Installation Instructions** – How to install and use the theme  
-✅ **Customization Guide** – How to modify colors, layout, and content  
-✅ **Built With** – Technologies used (HTML, CSS, JavaScript, Jekyll, Bootstrap, etc.)  
-✅ **License & Attribution** – If they borrowed elements from other themes  
+On GitHub, open any file → pencil icon → edit → **Commit changes**. The site updates in about a minute.
 
-For example, a **README.md** for a Jekyll-based theme might look like this:
+- New paper: copy an `<article ...>` block in `research.html` and change the text. `data-theme` is `land`, `water` or `climate`.
+- Text in square brackets like `[Course title]` is a placeholder to fill in or delete.
 
-```markdown
-# My Custom GitHub Pages Theme
+## Optional: custom domain
 
-A lightweight and professional theme for **GitHub Pages**, designed for researchers and academics.  
+Buy a domain (e.g., nileshshinde.com, ~$12/yr), then GitHub **Settings → Pages → Custom domain** and follow the DNS instructions shown there.
 
-## 🎨 Features
-- Responsive, mobile-friendly design
-- Easy customization via `_config.yml`
-- Minimalist layout with a focus on readability
-- Supports Markdown, LaTeX, and Jekyll collections
+## Files
 
-## 🚀 Installation
-To use this theme with **GitHub Pages**, simply fork this repository and modify the content in:
-- `_config.yml` for site settings
-- `index.md` for the homepage
-- `_posts/` for blog updates
-- `_data/` for structured content
-
-## 🛠 Built With
-- Jekyll
-- Bootstrap 5
-- FontAwesome Icons
-
-## 📜 License
-Open-source under the MIT License.
+| File | Page |
+|---|---|
+| index.html | Home |
+| research.html | Research (theme filters, abstracts) |
+| data-code.html | Data & Code |
+| teaching.html | Teaching + prospective students |
+| workshop.html | Social Cost of Water Pollution Workshop |
+| resources.html | Resources |
+| style.css | All styling (IU crimson #990000, cream #EDEBEB) |
