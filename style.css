@@ -113,3 +113,9 @@ h2 { margin: 0; font-size: 22px; font-weight: 600; }
   .hero { padding: 36px 0 28px; }
   .lede { font-size: 17px; }
 }
+.resource-group .eyebrow { margin-top: 12px; font-weight: 600; color: var(--ink); }
+.resource-group.prose h2 { margin-top: 0; }
+.plist li { display: block; }
+.plist .by em { font-style: italic; }
+.hero-text p { margin: 0; }
+.hero-text .lede + p { color: var(--ink-2); }
