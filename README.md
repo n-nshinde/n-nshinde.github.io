@@ -18,8 +18,9 @@ Plain HTML + CSS. No build step. Hosted free on GitHub Pages.
 
 | Paper | File |
 |---|---|
-| JEEM 2027 — Land Registration and Conflict Reduction | papers/jeem2026-land-registration.pdf |
 | JEEM 2025 — Beyond the Canopy | papers/jeem2025-beyond-the-canopy.pdf |
+| PNAS 2023 — Collective Property Rights | papers/pnas2023-collective-property-rights.pdf |
+| Health Affairs Scholar 2026 — Primary Care and Weather | papers/has2026-primary-care-weather.pdf |
 | FPE 2024 — Tree Plantations in Sub-Saharan Africa | papers/fpe2024-tree-plantations.pdf |
 | Book chapter 2022 — Tree Cover in Andhra Pradesh | papers/chapter2022-tree-cover-andhra-pradesh.pdf |
 | R&R JDE — Irrigation and Groundwater Recharge | papers/rr-irrigation-groundwater-recharge.pdf |
@@ -28,7 +29,7 @@ Plain HTML + CSS. No build step. Hosted free on GitHub Pages.
 | WP — Local Governance in Brazil | papers/wp-local-governance-brazil.pdf |
 | WP — Drought-Induced Deforestation | papers/wp-drought-deforestation.pdf |
 
-Papers without a PDF show an "Email me for draft" link instead. To post a draft later, put the PDF in `papers/` and change that link to `<a href="papers/wp-short-title.pdf">Draft</a>`.
+Papers without a PDF show an "Email me for draft" link instead. To post a draft later, put the PDF in `papers/` and change that link to `<a href="papers/wp-short-title.pdf">Working paper draft</a>`.
 
 Each PDF must be under 25 MB to upload in the browser. Compress large PDFs before uploading (downsample images to ~150 dpi); the current files are all under 4 MB.
 
@@ -63,6 +64,13 @@ Buy a domain (e.g., nileshshinde.com, ~$12/yr), then GitHub **Settings → Pages
 | index.html | Home |
 | research.html | Research: journal articles, book chapters, working papers |
 | teaching.html | Teaching |
-| workshop.html | Social Cost of Water Pollution Workshop |
+| workshop.html | Community: Social Cost of Water Pollution Workshop, Dhar India Studies Program, CLACS |
 | resources.html | Students: working with me + getting started in research |
 | style.css | All styling (IU crimson #990000 accent on white) |
+
+## Sharing published papers
+
+- **Open access (CC BY / CC BY-NC-ND):** post the publisher PDF, labelled "PDF (open access)". This covers PNAS 2023, Health Affairs Scholar 2026 and JEEM 2025.
+- **Not open access (Elsevier JEEM 2027, Cambridge EDE 2026):** do not post the publisher PDF. Link the DOI, and optionally post your accepted manuscript (the final version after peer review, before typesetting), labelled "Author manuscript".
+- **Author manuscripts already posted:** FPE 2024 and the Routledge chapter.
+- **Working papers:** labelled "Working paper draft".
