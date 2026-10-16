@@ -37,7 +37,6 @@ a:hover { color: var(--crimson-dark); }
 .nav-links { display: flex; flex-wrap: wrap; gap: 4px 22px; font-size: 15px; margin: 0; padding: 0; list-style: none; }
 .nav-links a { color: var(--ink-2); text-decoration: none; display: inline-block; padding: 6px 0; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--crimson); }
-.nav-links a.cv { color: var(--crimson); font-weight: 500; }
 
 /* ---------- hero ---------- */
 .hero { display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 28px 40px; padding: 56px 0 40px; }
@@ -119,3 +118,10 @@ h2 { margin: 0; font-size: 22px; font-weight: 600; }
 .plist .by em { font-style: italic; color: var(--crimson); }
 .hero-text p { margin: 0; }
 .hero-text .lede + p { color: var(--ink-2); }
+
+/* Homepage highlights */
+.highlights { list-style: none; margin: 0; padding: 0; }
+.highlights li { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.highlights li:last-child { border-bottom: 0; }
+.highlights p { margin: 0; font-size: 15px; color: var(--ink-2); line-height: 1.55; }
+.highlights .ttl { font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
