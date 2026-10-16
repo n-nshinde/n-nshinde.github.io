@@ -19,11 +19,8 @@ Plain HTML + CSS. No build step. Hosted free on GitHub Pages.
 | Paper | File |
 |---|---|
 | JEEM 2027 — Land Registration and Conflict Reduction | papers/jeem2026-land-registration.pdf |
-| Health Affairs Scholar 2026 — Primary Care and Weather | papers/has2026-primary-care-weather.pdf |
-| EDE 2026 — The Cold, Hard Truth (snowpack) | papers/ede2026-snowpack-wheat.pdf |
 | JEEM 2025 — Beyond the Canopy | papers/jeem2025-beyond-the-canopy.pdf |
 | FPE 2024 — Tree Plantations in Sub-Saharan Africa | papers/fpe2024-tree-plantations.pdf |
-| PNAS 2023 — Collective Property Rights | papers/pnas2023-collective-property-rights.pdf |
 | Book chapter 2022 — Tree Cover in Andhra Pradesh | papers/chapter2022-tree-cover-andhra-pradesh.pdf |
 | R&R JDE — Irrigation and Groundwater Recharge | papers/rr-irrigation-groundwater-recharge.pdf |
 | WP — Gross External Damages of Water Pollution | papers/wp-water-pollution-damages.pdf |
