@@ -33,7 +33,7 @@ Papers without a PDF show an "Email me for draft" link instead. To post a draft 
 
 Each PDF must be under 25 MB to upload in the browser. Compress large PDFs before uploading (downsample images to ~150 dpi); the current files are all under 4 MB.
 
-For published papers, check each journal's sharing policy: Elsevier (JEEM, Forest Policy and Economics) and Cambridge (EDE) usually allow only the accepted manuscript on a personal site. The PNAS, EDE and Health Affairs Scholar PDFs still carry a "Downloaded from … Indiana University" line on each page.
+For published papers, check each journal's sharing policy: Elsevier (JEEM, Forest Policy and Economics) and Cambridge (EDE) usually allow only the accepted manuscript on a personal site. The "Downloaded from … Indiana University" stamps were removed from the PNAS and Health Affairs Scholar PDFs; strip them from any new library download before posting.
 
 ## Update the live site
 
@@ -72,5 +72,5 @@ Buy a domain (e.g., nileshshinde.com, ~$12/yr), then GitHub **Settings → Pages
 
 - **Open access (CC BY / CC BY-NC-ND):** post the publisher PDF, labelled "PDF (open access)". This covers PNAS 2023, Health Affairs Scholar 2026 and JEEM 2025.
 - **Not open access (Elsevier JEEM 2027, Cambridge EDE 2026):** do not post the publisher PDF. Link the DOI, and optionally post your accepted manuscript (the final version after peer review, before typesetting), labelled "Author manuscript".
-- **Author manuscripts already posted:** FPE 2024 and the Routledge chapter.
+- **Author manuscripts already posted:** FPE 2024 and the Routledge chapter. Each has a cover page with the citation, DOI link and required licence/notice text (Elsevier: CC BY-NC-ND 4.0; Routledge: "Accepted Manuscript of a book chapter published by Routledge…"). Add the same kind of cover page to future accepted manuscripts.
 - **Working papers:** labelled "Working paper draft".
