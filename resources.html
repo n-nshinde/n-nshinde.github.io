@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -30,25 +30,30 @@
 <section class="resource-group" id="students">
 <div class="prose">
 <p>I work with students interested in environmental and development economics, especially land and property rights, water, and climate adaptation, using causal inference and spatial data.</p>
-<p><strong>Prospective Ph.D. and master's students:</strong> the O'Neill School admits Ph.D. and master's students through centralized admissions, so please apply through the O'Neill program you are interested in. I am happy to have an email conversation beforehand about research fit.</p>
+<p><strong>Prospective Ph.D. and master's students:</strong> please apply through the O'Neill program you are interested in (admissions are centralized). I am happy to have an email conversation beforehand about research fit.</p>
 <ul>
 <li>Ph.D.: <a href="https://oneill.indiana.edu/doctoral/degrees/index.html">doctoral programs</a> (including <a href="https://oneill.indiana.edu/doctoral/degrees/public-affairs/environmental-policy.html">Environmental Policy</a>) · <a href="https://oneill.indiana.edu/doctoral/apply.html">how to apply</a></li>
 <li>Master's: <a href="https://oneill.indiana.edu/masters/degrees-certificates/index.html">degrees and certificates</a> · <a href="https://oneill.indiana.edu/masters/apply/index.html">how to apply</a></li>
 </ul>
-<p><strong>Current IU students:</strong> if you are interested in research assistant work, please reach out by email. I am also happy to meet during my office hours.</p>
+<p><strong>Current IU students:</strong> if you are interested in research assistant work, please reach out by email or come to my office hours.</p>
 <p><a class="btn" href="mailto:nnshinde@iu.edu?subject=Prospective%20student%20%2F%20RA">Email me</a></p>
 </div>
 </section>
 
-<h2 style="margin:8px 0 20px; font-size:26px">Getting started in research</h2>
+<!-- HOW TO EDIT: each step is one <details> block; the <summary> line is what shows when it is closed. -->
 
-<div class="resource-group prose">
-<h2>1. Start with a question</h2>
-<p>Good projects start from a policy-relevant question you care about, not from a method. Read recent papers in the area, note what they leave open, and ask what data would let you answer it. When you are ready, write a one-page note: the question, why it matters, the data, and how you would identify the effect.</p>
+<section class="steps" aria-labelledby="gs">
+<h2 id="gs">Getting started in research</h2>
+
+<details class="step">
+<summary>1. Start with a question</summary>
+<div class="prose">
+<p>Good projects start from a policy-relevant question you care about, not from a method. Read recent papers in the area, note what they leave open, and ask what data would let you answer it. When you are ready, write a one-page note: the question, why it matters, the data, and how you would identify the effect. <a href="https://www.overleaf.com/latex/templates">Overleaf LaTeX templates</a> are a good place to write it.</p>
 </div>
+</details>
 
-<div class="resource-group">
-<h2>2. Learn causal inference</h2>
+<details class="step">
+<summary>2. Learn causal inference</summary>
 <ul>
 <li><a href="https://mixtape.scunning.com/">Causal Inference: The Mixtape</a> (start here)</li>
 <li><a href="https://www.econometrics-with-r.org/">Introduction to Econometrics with R</a></li>
@@ -60,11 +65,11 @@
 <li><a href="https://sites.google.com/view/ocis/home">Online Causal Inference Seminar</a></li>
 <li><a href="https://eml.berkeley.edu/books/choice2.html">Discrete Choice Methods with Simulation</a> (for valuation and choice models)</li>
 </ul>
-</div>
+</details>
 
-<div class="resource-group">
-<h2>3. Build your coding skills</h2>
-<p class="eyebrow">Stata</p>
+<details class="step">
+<summary>3. Build your coding skills</summary>
+<p class="sub">Stata</p>
 <ul>
 <li><a href="https://www.ssc.wisc.edu/statistics/">Stata guides (University of Wisconsin–Madison)</a></li>
 <li><a href="https://www.princeton.edu/~otorres/Stata/">Stata tutorials (Princeton University)</a></li>
@@ -72,33 +77,27 @@
 <li><a href="https://gtools.readthedocs.io/en/latest/index.html">gtools: big data processing</a></li>
 <li><a href="https://medium.com/the-stata-gallery/top-25-stata-visualizations-with-full-code-668b5df114b6">Top 25 Stata visualizations with code</a></li>
 </ul>
-<p class="eyebrow">Python, R and beyond</p>
+<p class="sub">Python, R and machine learning</p>
 <ul>
 <li><a href="https://www.danielmsullivan.com/pages/tutorial_stata_to_python.html">Stata to Python equivalents</a></li>
 <li><a href="https://lost-stats.github.io/">Library of Statistical Techniques (LOST)</a>: the same method in Stata, R and Python</li>
 <li><a href="https://github.com/py-why/dowhy">DoWhy</a> and <a href="https://github.com/py-why/EconML">EconML</a> (Python)</li>
 <li><a href="https://github.com/vkoul/Econ-Data-Science">Economics and data science</a></li>
 <li><a href="https://sites.google.com/view/dariosansone/resources/machine-learning">Machine learning in economics</a></li>
+<li><a href="https://sites.google.com/vt.edu/kgml-book/">Knowledge-Guided Machine Learning</a> (Karpatne, Kannan and Kumar, 2022): building scientific knowledge into ML models</li>
 </ul>
-</div>
+</details>
 
-<div class="resource-group">
-<h2>4. Work with spatial and survey data</h2>
+<details class="step">
+<summary>4. Work with spatial and survey data</summary>
 <ul>
 <li><a href="https://spatialthoughts.com/blog/">Spatial Thoughts blog (Ujaval Gandhi)</a>: GIS and Google Earth Engine tutorials</li>
 <li><a href="https://www.aiddata.org/geoquery">AidData GeoQuery</a>: subnational data, ready to download</li>
 <li><a href="https://www.geoboundaries.org/">geoBoundaries</a>: administrative boundaries</li>
 <li><a href="http://www.damianclarke.net/computation/index.html">Automatic download and processing of DHS surveys</a></li>
 </ul>
-</div>
-
-<div class="resource-group">
-<h2>5. Write it up</h2>
-<ul>
-<li><a href="https://www.overleaf.com/latex/templates">Overleaf LaTeX templates</a></li>
-<li><a href="https://sites.google.com/vt.edu/kgml-book/">Knowledge-Guided Machine Learning</a> (Karpatne, Kannan and Kumar, 2022): building scientific knowledge into ML models</li>
-</ul>
-</div>
+</details>
+</section>
 
 </main>
 

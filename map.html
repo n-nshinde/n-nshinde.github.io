@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -38,53 +38,54 @@
 
 <!-- HOW TO EDIT
      - Each region below is one <section>; paper titles should match research.html.
+     - Each title starts with a topic label: <span class="topic">Land</span> (Land, Forests, Water, Climate, Health, Pollution).
      - The map popups read their titles from these lists.
      - Shaded countries are set in the REGIONS list in the script at the bottom of this file. -->
 
 <section class="status-sec region" id="brazil" aria-labelledby="h-brazil">
 <h2 id="h-brazil">Brazil</h2>
 <ul class="plist">
-<li><p class="ttl">Land Registration and Conflict Reduction: Evidence from the Brazilian Amazon</p></li>
-<li><p class="ttl">Beyond the Canopy: How Satellite Data Detection Thresholds Influence Policy Evaluation and Deforestation Behavior</p></li>
-<li><p class="ttl">Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon</p></li>
-<li><p class="ttl">Clearing to Claim: The Perverse Incentives of Land Regularization in the Brazilian Amazon</p></li>
-<li><p class="ttl">Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil</p></li>
-<li><p class="ttl">Drought-Induced Deforestation in the Brazilian Amazon</p></li>
+<li><p class="ttl"><span class="topic">Land</span>Land Registration and Conflict Reduction: Evidence from the Brazilian Amazon</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>Beyond the Canopy: How Satellite Data Detection Thresholds Influence Policy Evaluation and Deforestation Behavior</p></li>
+<li><p class="ttl"><span class="topic">Land</span>Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon</p></li>
+<li><p class="ttl"><span class="topic">Land</span>Clearing to Claim: The Perverse Incentives of Land Regularization in the Brazilian Amazon</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>Drought-Induced Deforestation in the Brazilian Amazon</p></li>
 </ul>
 </section>
 
 <section class="status-sec region" id="usa" aria-labelledby="h-usa">
 <h2 id="h-usa">United States</h2>
 <ul class="plist">
-<li><p class="ttl">Primary Care, Weather, and the Missed Opportunity for Savings</p></li>
-<li><p class="ttl">Gross External Damages of Water Pollution in the United States</p></li>
-<li><p class="ttl">Forest Disease, Wildfire Risk, and Recreational Welfare: Evidence from the USA</p></li>
-<li><p class="ttl">Hazardous Waste Sites Alter Regional Soil Chemistry: Evidence from 80,000 Soil Tests in Tennessee</p></li>
+<li><p class="ttl"><span class="topic">Health</span>Primary Care, Weather, and the Missed Opportunity for Savings</p></li>
+<li><p class="ttl"><span class="topic">Water</span>Gross External Damages of Water Pollution in the United States</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>Forest Disease, Wildfire Risk, and Recreational Welfare: Evidence from the USA</p></li>
+<li><p class="ttl"><span class="topic">Pollution</span>Hazardous Waste Sites Alter Regional Soil Chemistry: Evidence from 80,000 Soil Tests in Tennessee</p></li>
 </ul>
 </section>
 
 <section class="status-sec region" id="india" aria-labelledby="h-india">
 <h2 id="h-india">India</h2>
 <ul class="plist">
-<li><p class="ttl">Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh, India</p></li>
-<li><p class="ttl">Unintended Consequences of a Large Irrigation Project for Groundwater Recharge</p></li>
-<li><p class="ttl">Thirteenth Month of a Drought Year: Agricultural Shocks and Judicial Outcomes in India</p></li>
-<li><p class="ttl">The Agrarian Cost of Groundwater Depletion in India</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh, India</p></li>
+<li><p class="ttl"><span class="topic">Water</span>Unintended Consequences of a Large Irrigation Project for Groundwater Recharge</p></li>
+<li><p class="ttl"><span class="topic">Climate</span>Thirteenth Month of a Drought Year: Agricultural Shocks and Judicial Outcomes in India</p></li>
+<li><p class="ttl"><span class="topic">Water</span>The Agrarian Cost of Groundwater Depletion in India</p></li>
 </ul>
 </section>
 
 <section class="status-sec region" id="china" aria-labelledby="h-china">
 <h2 id="h-china">China</h2>
 <ul class="plist">
-<li><p class="ttl">The Cold, Hard Truth: Evidence from Heterogeneous Snowpack Insulation Effect on Winter Wheat Yields in China</p></li>
+<li><p class="ttl"><span class="topic">Climate</span>The Cold, Hard Truth: Evidence from Heterogeneous Snowpack Insulation Effect on Winter Wheat Yields in China</p></li>
 </ul>
 </section>
 
 <section class="status-sec region" id="africa" aria-labelledby="h-africa">
 <h2 id="h-africa">Sub-Saharan Africa</h2>
 <ul class="plist">
-<li><p class="ttl">The Human Well-Being Outcomes of Tree Plantations in Sub-Saharan Africa: A Reassessment of Evidence Using Longitudinal Subnational-Year Data</p></li>
-<li><p class="ttl">Disease at the Root, Deforestation at the Edge: Cassava Epidemic and Deforestation in Uganda</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>The Human Well-Being Outcomes of Tree Plantations in Sub-Saharan Africa: A Reassessment of Evidence Using Longitudinal Subnational-Year Data</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>Disease at the Root, Deforestation at the Edge: Cassava Epidemic and Deforestation in Uganda</p></li>
 </ul>
 </section>
 
@@ -95,6 +96,7 @@
 <footer class="site-footer">
 <div class="wrap">
 <span>© 2026 Nilesh Shinde</span>
+<a href="mailto:nnshinde@iu.edu">nnshinde@iu.edu</a>
 </div>
 </footer>
 
@@ -121,7 +123,7 @@ function regionOf(p) {
 function popupHtml(name, r) {
   var sec = document.getElementById(r.section);
   var titles = Array.prototype.map.call(sec.querySelectorAll('.ttl'), function (t) {
-    return '<li>' + t.textContent + '</li>';
+    return '<li>' + t.innerHTML + '</li>';
   }).join('');
   return '<p class="pop-h">' + sec.querySelector('h2').textContent +
     (sec.id === 'africa' ? ' <span>(' + name + ')</span>' : '') + '</p>' +
