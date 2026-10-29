@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<link rel="stylesheet" href="style.css?v=6">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
@@ -38,6 +38,7 @@
 
 <!-- HOW TO EDIT
      - Each region below is one <section>; paper titles should match research.html.
+     - Optional one-line main finding: <p class="finding">…</p> after the title (map popups show titles only).
      - Each title starts with a topic label: <span class="topic">Land</span> (Land, Forests, Water, Climate, Health, Pollution).
      - The map popups read their titles from these lists.
      - Shaded countries are set in the REGIONS list in the script at the bottom of this file. -->
@@ -45,20 +46,20 @@
 <section class="status-sec region" id="brazil" aria-labelledby="h-brazil">
 <h2 id="h-brazil">Brazil</h2>
 <ul class="plist">
-<li><p class="ttl"><span class="topic">Land</span>Land Registration and Conflict Reduction: Evidence from the Brazilian Amazon</p></li>
-<li><p class="ttl"><span class="topic">Forests</span>Beyond the Canopy: How Satellite Data Detection Thresholds Influence Policy Evaluation and Deforestation Behavior</p></li>
-<li><p class="ttl"><span class="topic">Land</span>Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon</p></li>
-<li><p class="ttl"><span class="topic">Land</span>Clearing to Claim: The Perverse Incentives of Land Regularization in the Brazilian Amazon</p></li>
-<li><p class="ttl"><span class="topic">Forests</span>Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil</p></li>
-<li><p class="ttl"><span class="topic">Forests</span>Drought-Induced Deforestation in the Brazilian Amazon</p></li>
+<li><p class="ttl"><span class="topic">Land</span>Land Registration and Conflict Reduction: Evidence from the Brazilian Amazon</p><p class="finding">Early rollout of Brazil's rural environmental registry (CAR) in Pará cut land conflicts by 11.5% and land-related death threats by 10%.</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>Beyond the Canopy: How Satellite Data Detection Thresholds Influence Policy Evaluation and Deforestation Behavior</p><p class="finding">Official monitoring misses clearings under 6.25 ha, which overstates the effect of municipal blacklisting (47.6% vs. 31.2%). Landholders shifted to smaller clearings.</p></li>
+<li><p class="ttl"><span class="topic">Land</span>Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon</p><p class="finding">Indigenous territories with secure tenure regrow about 5% more secondary forest on previously cleared land, and their secondary forests are about two years older.</p></li>
+<li><p class="ttl"><span class="topic">Land</span>Clearing to Claim: The Perverse Incentives of Land Regularization in the Brazilian Amazon</p><p class="finding">Granting title for “productive use” raises deforestation in the years before titling, and landholders redraw boundaries just below Forest Code size thresholds.</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil</p><p class="finding">Pará's Green Municipalities Program is associated with 12% less deforestation a year and 7% more secondary forest. Its carbon benefits exceed its costs.</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>Drought-Induced Deforestation in the Brazilian Amazon</p><p class="finding">Drought raises deforestation only where family farms dominate, accounting for about 331 km² of primary forest cleared in 2006–2019.</p></li>
 </ul>
 </section>
 
 <section class="status-sec region" id="usa" aria-labelledby="h-usa">
 <h2 id="h-usa">United States</h2>
 <ul class="plist">
-<li><p class="ttl"><span class="topic">Health</span>Primary Care, Weather, and the Missed Opportunity for Savings</p></li>
-<li><p class="ttl"><span class="topic">Water</span>Gross External Damages of Water Pollution in the United States</p></li>
+<li><p class="ttl"><span class="topic">Health</span>Primary Care, Weather, and the Missed Opportunity for Savings</p><p class="finding">Extreme weather strains whole health systems at once. We set out payment and data reforms that let primary care act before heat waves, smoke and storms hit.</p></li>
+<li><p class="ttl"><span class="topic">Water</span>Gross External Damages of Water Pollution in the United States</p><p class="finding">The first national estimates of nutrient-pollution damages: $35–100 billion a year, with municipal wastewater contributing more than agriculture.</p></li>
 <li><p class="ttl"><span class="topic">Forests</span>Forest Disease, Wildfire Risk, and Recreational Welfare: Evidence from the USA</p></li>
 <li><p class="ttl"><span class="topic">Pollution</span>Hazardous Waste Sites Alter Regional Soil Chemistry: Evidence from 80,000 Soil Tests in Tennessee</p></li>
 </ul>
@@ -67,8 +68,8 @@
 <section class="status-sec region" id="india" aria-labelledby="h-india">
 <h2 id="h-india">India</h2>
 <ul class="plist">
-<li><p class="ttl"><span class="topic">Forests</span>Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh, India</p></li>
-<li><p class="ttl"><span class="topic">Water</span>Unintended Consequences of a Large Irrigation Project for Groundwater Recharge</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh, India</p><p class="finding">Larger farms, longer tenure and off-farm work make households more likely to plant trees. Irrigation, distant plots and higher elevation make them less likely.</p></li>
+<li><p class="ttl"><span class="topic">Water</span>Unintended Consequences of a Large Irrigation Project for Groundwater Recharge</p><p class="finding">Surface water from the world's largest irrigation canal raised groundwater levels by 80% of baseline.</p></li>
 <li><p class="ttl"><span class="topic">Climate</span>Thirteenth Month of a Drought Year: Agricultural Shocks and Judicial Outcomes in India</p></li>
 <li><p class="ttl"><span class="topic">Water</span>The Agrarian Cost of Groundwater Depletion in India</p></li>
 </ul>
@@ -77,14 +78,14 @@
 <section class="status-sec region" id="china" aria-labelledby="h-china">
 <h2 id="h-china">China</h2>
 <ul class="plist">
-<li><p class="ttl"><span class="topic">Climate</span>The Cold, Hard Truth: Evidence from Heterogeneous Snowpack Insulation Effect on Winter Wheat Yields in China</p></li>
+<li><p class="ttl"><span class="topic">Climate</span>The Cold, Hard Truth: Evidence from Heterogeneous Snowpack Insulation Effect on Winter Wheat Yields in China</p><p class="finding">Each additional freezing degree day cuts winter wheat yields by 2.37 kg/ha. Snow cover protects yields on the most productive farms.</p></li>
 </ul>
 </section>
 
 <section class="status-sec region" id="africa" aria-labelledby="h-africa">
 <h2 id="h-africa">Sub-Saharan Africa</h2>
 <ul class="plist">
-<li><p class="ttl"><span class="topic">Forests</span>The Human Well-Being Outcomes of Tree Plantations in Sub-Saharan Africa: A Reassessment of Evidence Using Longitudinal Subnational-Year Data</p></li>
+<li><p class="ttl"><span class="topic">Forests</span>The Human Well-Being Outcomes of Tree Plantations in Sub-Saharan Africa: A Reassessment of Evidence Using Longitudinal Subnational-Year Data</p><p class="finding">Across 12 countries, more land in tree plantations raised a wealth index by over a third and income per capita by $205–395 a year, but did not move the Human Development Index.</p></li>
 <li><p class="ttl"><span class="topic">Forests</span>Disease at the Root, Deforestation at the Edge: Cassava Epidemic and Deforestation in Uganda</p></li>
 </ul>
 </section>

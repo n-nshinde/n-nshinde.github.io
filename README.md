@@ -41,7 +41,7 @@ For published papers, check each journal's sharing policy: Elsevier (JEEM, Fores
 
 Upload the changed files with **Add file → Upload files** (same names replace the old ones), then wait 1–2 minutes and hard-refresh with **Cmd + Shift + R**.
 
-Every page loads `style.css?v=6`. After changing `style.css`, bump the number (`?v=7`, …) in all six HTML files so browsers fetch the new styles.
+Every page loads `style.css?v=7`. After changing `style.css`, bump the number (`?v=8`, …) in all six HTML files so browsers fetch the new styles.
 
 ## Edit later
 

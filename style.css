@@ -157,3 +157,8 @@ h2 { margin: 0; font-size: 22px; font-weight: 600; }
 .topic { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--crimson); }
 .leaflet-container .pop-l .topic { min-width: 0; margin-right: 4px; font-size: 11px; }
 .leaflet-container a { color: var(--crimson); }
+.region .finding { margin: 3px 0 0 92px; font-size: 14px; line-height: 1.5; color: var(--muted); max-width: 640px; }
+@media (max-width: 600px) {
+  .region .plist .ttl { grid-template-columns: 1fr; gap: 2px; }
+  .region .finding { margin-left: 0; }
+}
