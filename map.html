@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research Map | Nilesh Shinde</title>
+<meta name="description" content="Where Nilesh Shinde's research is set: Brazil, India, the United States, China and Sub-Saharan Africa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+<header class="site-header">
+<nav class="wrap" aria-label="Main">
+<a class="brand" href="index.html">Nilesh Shinde</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="map.html" aria-current="page">Map</a></li>
+<li><a href="teaching.html">Teaching</a></li>
+<li><a href="workshop.html">Community</a></li>
+<li><a href="resources.html">Students</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="wrap">
+
+<section class="intro">
+<h1>Research Map</h1>
+<p>Where my research is set. Select a country to see the papers.</p>
+</section>
+
+<div id="map" class="rmap" role="img" aria-label="World map highlighting Brazil, India, the United States, China and Sub-Saharan Africa. The same information is listed below the map."></div>
+
+<!-- HOW TO EDIT
+     - Each region below is one <section>; paper titles should match research.html.
+     - The map popups read their titles from these lists.
+     - Shaded countries are set in the REGIONS list in the script at the bottom of this file. -->
+
+<section class="status-sec region" id="brazil" aria-labelledby="h-brazil">
+<h2 id="h-brazil">Brazil</h2>
+<ul class="plist">
+<li><p class="ttl">Land Registration and Conflict Reduction: Evidence from the Brazilian Amazon</p></li>
+<li><p class="ttl">Beyond the Canopy: How Satellite Data Detection Thresholds Influence Policy Evaluation and Deforestation Behavior</p></li>
+<li><p class="ttl">Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon</p></li>
+<li><p class="ttl">Clearing to Claim: The Perverse Incentives of Land Regularization in the Brazilian Amazon</p></li>
+<li><p class="ttl">Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil</p></li>
+<li><p class="ttl">Drought-Induced Deforestation in the Brazilian Amazon</p></li>
+</ul>
+</section>
+
+<section class="status-sec region" id="usa" aria-labelledby="h-usa">
+<h2 id="h-usa">United States</h2>
+<ul class="plist">
+<li><p class="ttl">Primary Care, Weather, and the Missed Opportunity for Savings</p></li>
+<li><p class="ttl">Gross External Damages of Water Pollution in the United States</p></li>
+<li><p class="ttl">Forest Disease, Wildfire Risk, and Recreational Welfare: Evidence from the USA</p></li>
+<li><p class="ttl">Hazardous Waste Sites Alter Regional Soil Chemistry: Evidence from 80,000 Soil Tests in Tennessee</p></li>
+</ul>
+</section>
+
+<section class="status-sec region" id="india" aria-labelledby="h-india">
+<h2 id="h-india">India</h2>
+<ul class="plist">
+<li><p class="ttl">Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh, India</p></li>
+<li><p class="ttl">Unintended Consequences of a Large Irrigation Project for Groundwater Recharge</p></li>
+<li><p class="ttl">Thirteenth Month of a Drought Year: Agricultural Shocks and Judicial Outcomes in India</p></li>
+<li><p class="ttl">The Agrarian Cost of Groundwater Depletion in India</p></li>
+</ul>
+</section>
+
+<section class="status-sec region" id="china" aria-labelledby="h-china">
+<h2 id="h-china">China</h2>
+<ul class="plist">
+<li><p class="ttl">The Cold, Hard Truth: Evidence from Heterogeneous Snowpack Insulation Effect on Winter Wheat Yields in China</p></li>
+</ul>
+</section>
+
+<section class="status-sec region" id="africa" aria-labelledby="h-africa">
+<h2 id="h-africa">Sub-Saharan Africa</h2>
+<ul class="plist">
+<li><p class="ttl">The Human Well-Being Outcomes of Tree Plantations in Sub-Saharan Africa: A Reassessment of Evidence Using Longitudinal Subnational-Year Data</p></li>
+<li><p class="ttl">Disease at the Root, Deforestation at the Edge: Cassava Epidemic and Deforestation in Uganda</p></li>
+</ul>
+</section>
+
+<p class="map-credit">Full citations and PDFs are on the <a href="research.html">Research</a> page. Boundaries: Natural Earth.</p>
+
+</main>
+
+<footer class="site-footer">
+<div class="wrap">
+<span>© 2026 Nilesh Shinde</span>
+</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+// Shaded countries; section = id of the paper list below the map.
+var REGIONS = {
+  BRA: { section: 'brazil' },
+  USA: { section: 'usa' },
+  IND: { section: 'india' },
+  CHN: { section: 'china' },
+  AFR: { section: 'africa' }  // every Sub-Saharan country
+};
+var AFRICA_SUBREGIONS = ['Eastern Africa', 'Middle Africa', 'Southern Africa', 'Western Africa'];
+
+var COLORS = { region: '#990000', land: '#E4E4E4', sea: '#F7F7F5' };
+
+function regionOf(p) {
+  if (REGIONS[p.iso]) return REGIONS[p.iso];
+  if (AFRICA_SUBREGIONS.indexOf(p.sub) !== -1 && p.iso !== 'SDN') return REGIONS.AFR;
+  return null;
+}
+
+function popupHtml(name, r) {
+  var sec = document.getElementById(r.section);
+  var titles = Array.prototype.map.call(sec.querySelectorAll('.ttl'), function (t) {
+    return '<li>' + t.textContent + '</li>';
+  }).join('');
+  return '<p class="pop-h">' + sec.querySelector('h2').textContent +
+    (sec.id === 'africa' ? ' <span>(' + name + ')</span>' : '') + '</p>' +
+    '<ul class="pop-l">' + titles + '</ul>' +
+    '<a href="#' + r.section + '">More below</a>';
+}
+
+var map = L.map('map', {
+  zoomSnap: 0.25, scrollWheelZoom: false, worldCopyJump: false,
+  maxBounds: [[-70, -200], [85, 200]], minZoom: 1, attributionControl: false
+});
+map.getContainer().style.background = COLORS.sea;
+map.fitBounds([[-40, -168], [72, 150]]);
+
+fetch('data/countries.geojson').then(function (r) { return r.json(); }).then(function (data) {
+  L.geoJSON(data, {
+    style: function (f) {
+      var r = regionOf(f.properties);
+      return {
+        fillColor: r ? COLORS.region : COLORS.land, fillOpacity: 1,
+        color: '#FFFFFF', weight: 0.8
+      };
+    },
+    onEachFeature: function (f, layer) {
+      var r = regionOf(f.properties);
+      if (!r) { layer.options.interactive = false; return; }
+      layer.bindPopup(popupHtml(f.properties.name, r), { maxWidth: 300 });
+      layer.on('mouseover', function () { layer.setStyle({ weight: 2, color: '#1B1F23' }); layer.bringToFront(); });
+      layer.on('mouseout', function () { layer.setStyle({ weight: 0.8, color: '#FFFFFF' }); });
+    }
+  }).addTo(map);
+});
+</script>
+</body>
+</html>
