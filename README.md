@@ -41,7 +41,7 @@ For published papers, check each journal's sharing policy: Elsevier (JEEM, Fores
 
 Upload the changed files with **Add file → Upload files** (same names replace the old ones), then wait 1–2 minutes and hard-refresh with **Cmd + Shift + R**.
 
-Every page loads `style.css?v=7`. After changing `style.css`, bump the number (`?v=8`, …) in all six HTML files so browsers fetch the new styles.
+Every page loads `style.css?v=8`. After changing `style.css`, bump the number (`?v=9`, …) in all six HTML files so browsers fetch the new styles.
 
 ## Edit later
 
@@ -50,7 +50,7 @@ On GitHub, open any file → pencil icon → edit → **Commit changes**. The si
 - New paper: copy one `<li>` in `research.html` and change the text. Format: title, then "(with coauthors) Year. *Journal*, volume: pages." and the links. If it is recent, also update "Recent papers" in `index.html`.
 - New course: copy one `<article class="row">` in `teaching.html`.
 - Titles, coauthor order and years follow the journal record (Crossref/DOI) for published papers and the CV for working papers. Keep `index.html` and `research.html` consistent.
-- New paper also goes under its country in `map.html` (copy one `<li>` and set its topic label: Land, Forests, Water, Climate, Health or Pollution). A new country: add a `<section>` there and its 3-letter code to `REGIONS` in the script at the bottom.
+- New paper also goes under its country in `map.html` (copy one `<li>` and set its topic label: Land, Forests, Water, Climate, Health or Pollution). Figures go in `images/figures/`; only use figures from open-access papers, your own manuscripts or working papers, never from publisher-only PDFs. A new country: add a `<section>` there and its 3-letter code to `REGIONS` in the script at the bottom.
 
 ## Repository visibility
 
@@ -71,6 +71,7 @@ Buy a domain (e.g., nileshshinde.com, ~$12/yr), then GitHub **Settings → Pages
 | workshop.html | Community: Social Cost of Water Pollution Workshop, Dhar India Studies Program, CLACS |
 | resources.html | Students: working with me + getting started in research (four steps that expand on click; each is a `<details>` block) |
 | style.css | All styling (IU crimson #990000 accent on white) |
+| images/figures/ | Map page figures (WebP), cropped from open-access papers, author manuscripts and working-paper drafts only |
 | data/countries.geojson | Country outlines for the Research Map (Natural Earth, public domain) |
 
 ## Sharing published papers
