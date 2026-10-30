@@ -127,9 +127,9 @@ h2 { margin: 0; font-size: 22px; font-weight: 600; }
 .highlights .ttl { font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
 
 /* Research map */
-.rmap { height: 440px; border: 1px solid var(--line); border-radius: 4px; font-family: var(--sans); }
+.rmap { height: 480px; border: 1px solid var(--line); border-radius: 4px; font-family: var(--sans); }
 @media (max-width: 600px) { .rmap { height: 300px; } }
-.map-credit { margin-top: 28px; font-size: 13px; color: var(--muted); }
+.map-credit { margin-top: 12px; font-size: 13px; color: var(--muted); }
 .leaflet-container .pop-h { margin: 0 0 6px; font-size: 14px; font-weight: 600; color: var(--ink); }
 .leaflet-container .pop-h span { font-weight: 400; color: var(--muted); }
 .leaflet-container .pop-l { margin: 0 0 8px; padding-left: 16px; font-size: 13px; line-height: 1.45; color: var(--ink-2); }
@@ -152,22 +152,6 @@ h2 { margin: 0; font-size: 22px; font-weight: 600; }
 .step .sub { margin: 4px 0 4px; font-size: 14px; font-weight: 600; color: var(--ink); }
 #students { padding-top: 40px; }
 
-/* Map page: plain titles with a topic label */
-.region .plist .ttl { font-weight: 400; display: grid; grid-template-columns: 92px minmax(0, 1fr); align-items: baseline; }
-.topic { font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--crimson); }
-.leaflet-container .pop-l .topic { min-width: 0; margin-right: 4px; font-size: 11px; }
+/* Map page: topic label in popups */
+.leaflet-container .pop-l .topic { margin-right: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--crimson); }
 .leaflet-container a { color: var(--crimson); }
-.region .finding { margin: 3px 0 0 92px; font-size: 14px; line-height: 1.5; color: var(--muted); max-width: 640px; }
-@media (max-width: 600px) {
-  .region .plist .ttl { grid-template-columns: 1fr; gap: 2px; }
-  .region .finding { margin-left: 0; }
-}
-.figs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 12px 0 4px 92px; max-width: 640px; }
-.figs figure { margin: 0; }
-.figs a { display: block; border: 1px solid var(--line); border-radius: 4px; background: #fff; padding: 6px; }
-.figs a:hover { border-color: var(--crimson); }
-.figs img { display: block; width: 100%; height: 170px; object-fit: contain; }
-.figs figcaption { margin-top: 5px; font-size: 12px; line-height: 1.4; color: var(--muted); }
-.figs figcaption span { font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-2); margin-right: 2px; }
-.figs figcaption em { font-style: normal; }
-@media (max-width: 600px) { .figs { margin-left: 0; grid-template-columns: 1fr; } .figs img { height: 200px; } }

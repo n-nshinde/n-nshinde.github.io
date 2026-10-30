@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -31,66 +31,10 @@
 
 <section class="intro">
 <h1>Research Map</h1>
-<p>Where my research is set, with a main finding and figure from each paper. Select a country to see its papers; select a figure to enlarge it.</p>
+<p>Where my research is set. Select a country to see its papers.</p>
 </section>
 
-<div id="map" class="rmap" role="img" aria-label="World map highlighting Brazil, India, the United States, China and Sub-Saharan Africa. The same information is listed below the map."></div>
-
-<!-- HOW TO EDIT
-     - Each region below is one <section>; paper titles should match research.html.
-     - Optional figures: <div class="figs"> with one <figure> per image in images/figures/ (click opens full size).
-     - Optional one-line main finding: <p class="finding">…</p> after the title (map popups show titles only).
-     - Each title starts with a topic label: <span class="topic">Land</span> (Land, Forests, Water, Climate, Health, Pollution).
-     - The map popups read their titles from these lists.
-     - Shaded countries are set in the REGIONS list in the script at the bottom of this file. -->
-
-<section class="status-sec region" id="brazil" aria-labelledby="h-brazil">
-<h2 id="h-brazil">Brazil</h2>
-<ul class="plist">
-<li><p class="ttl"><span class="topic">Land</span>Land Registration and Conflict Reduction: Evidence from the Brazilian Amazon</p><p class="finding">Early rollout of Brazil's rural environmental registry (CAR) in Pará cut land conflicts by 11.5% and land-related death threats by 10%.</p></li>
-<li><p class="ttl"><span class="topic">Forests</span>Beyond the Canopy: How Satellite Data Detection Thresholds Influence Policy Evaluation and Deforestation Behavior</p><p class="finding">Official monitoring misses clearings under 6.25 ha, which overstates the effect of municipal blacklisting (47.6% vs. 31.2%). Landholders shifted to smaller clearings.</p><div class="figs"><figure><a href="images/figures/canopy-map.webp"><img src="images/figures/canopy-map.webp" alt="Map: Municipalities blacklisted, by year" loading="lazy"></a><figcaption><span>Map</span> Municipalities blacklisted, by year <em>(JEEM 2025, CC BY 4.0)</em></figcaption></figure><figure><a href="images/figures/canopy-result.webp"><img src="images/figures/canopy-result.webp" alt="Result: Effect of blacklisting, by satellite product" loading="lazy"></a><figcaption><span>Result</span> Effect of blacklisting, by satellite product <em>(JEEM 2025, CC BY 4.0)</em></figcaption></figure></div></li>
-<li><p class="ttl"><span class="topic">Land</span>Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon</p><p class="finding">Indigenous territories with secure tenure regrow about 5% more secondary forest on previously cleared land, and their secondary forests are about two years older.</p><div class="figs"><figure><a href="images/figures/pnas-map.webp"><img src="images/figures/pnas-map.webp" alt="Map: Secondary forest inside and outside Indigenous territories, 2000" loading="lazy"></a><figcaption><span>Map</span> Secondary forest inside and outside Indigenous territories, 2000 <em>(PNAS 2023, CC BY-NC-ND 4.0)</em></figcaption></figure><figure><a href="images/figures/pnas-result.webp"><img src="images/figures/pnas-result.webp" alt="Result: Secondary forest extent and age after full tenure" loading="lazy"></a><figcaption><span>Result</span> Secondary forest extent and age after full tenure <em>(PNAS 2023, CC BY-NC-ND 4.0)</em></figcaption></figure></div></li>
-<li><p class="ttl"><span class="topic">Land</span>Clearing to Claim: The Perverse Incentives of Land Regularization in the Brazilian Amazon</p><p class="finding">Granting title for “productive use” raises deforestation in the years before titling, and landholders redraw boundaries just below Forest Code size thresholds.</p><div class="figs"><figure><a href="images/figures/claim-map.webp"><img src="images/figures/claim-map.webp" alt="Map: Deforestation, private titles and CAR registration, 2014–2020" loading="lazy"></a><figcaption><span>Map</span> Deforestation, private titles and CAR registration, 2014–2020</figcaption></figure><figure><a href="images/figures/claim-result.webp"><img src="images/figures/claim-result.webp" alt="Result: Forest loss before and after titling" loading="lazy"></a><figcaption><span>Result</span> Forest loss before and after titling</figcaption></figure></div></li>
-<li><p class="ttl"><span class="topic">Forests</span>Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil</p><p class="finding">Pará's Green Municipalities Program is associated with 12% less deforestation a year and 7% more secondary forest. Its carbon benefits exceed its costs.</p><div class="figs"><figure><a href="images/figures/pmv-map.webp"><img src="images/figures/pmv-map.webp" alt="Map: Enrollment in the Green Municipalities Program, 2010–2019" loading="lazy"></a><figcaption><span>Map</span> Enrollment in the Green Municipalities Program, 2010–2019</figcaption></figure><figure><a href="images/figures/pmv-result.webp"><img src="images/figures/pmv-result.webp" alt="Result: Effect of the program on deforestation" loading="lazy"></a><figcaption><span>Result</span> Effect of the program on deforestation</figcaption></figure></div></li>
-<li><p class="ttl"><span class="topic">Forests</span>Drought-Induced Deforestation in the Brazilian Amazon</p><p class="finding">Drought raises deforestation only where family farms dominate, accounting for about 331 km² of primary forest cleared in 2006–2019.</p><div class="figs"><figure><a href="images/figures/drought-map.webp"><img src="images/figures/drought-map.webp" alt="Map: Mean annual drought intensity, 2005–2019" loading="lazy"></a><figcaption><span>Map</span> Mean annual drought intensity, 2005–2019</figcaption></figure></div></li>
-</ul>
-</section>
-
-<section class="status-sec region" id="usa" aria-labelledby="h-usa">
-<h2 id="h-usa">United States</h2>
-<ul class="plist">
-<li><p class="ttl"><span class="topic">Health</span>Primary Care, Weather, and the Missed Opportunity for Savings</p><p class="finding">Extreme weather strains whole health systems at once. We set out payment and data reforms that let primary care act before heat waves, smoke and storms hit.</p></li>
-<li><p class="ttl"><span class="topic">Water</span>Gross External Damages of Water Pollution in the United States</p><p class="finding">The first national estimates of nutrient-pollution damages: $35–100 billion a year, with municipal wastewater contributing more than agriculture.</p><div class="figs"><figure><a href="images/figures/water-map.webp"><img src="images/figures/water-map.webp" alt="Map: Marginal and total damages by watershed" loading="lazy"></a><figcaption><span>Map</span> Marginal and total damages by watershed</figcaption></figure><figure><a href="images/figures/water-result.webp"><img src="images/figures/water-result.webp" alt="Result: Damages from agriculture vs. urban runoff" loading="lazy"></a><figcaption><span>Result</span> Damages from agriculture vs. urban runoff</figcaption></figure></div></li>
-<li><p class="ttl"><span class="topic">Forests</span>Forest Disease, Wildfire Risk, and Recreational Welfare: Evidence from the USA</p></li>
-<li><p class="ttl"><span class="topic">Pollution</span>Hazardous Waste Sites Alter Regional Soil Chemistry: Evidence from 80,000 Soil Tests in Tennessee</p></li>
-</ul>
-</section>
-
-<section class="status-sec region" id="india" aria-labelledby="h-india">
-<h2 id="h-india">India</h2>
-<ul class="plist">
-<li><p class="ttl"><span class="topic">Forests</span>Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh, India</p><p class="finding">Larger farms, longer tenure and off-farm work make households more likely to plant trees. Irrigation, distant plots and higher elevation make them less likely.</p><div class="figs"><figure><a href="images/figures/ap-map.webp"><img src="images/figures/ap-map.webp" alt="Map: Sampled villages in East and West Godavari" loading="lazy"></a><figcaption><span>Map</span> Sampled villages in East and West Godavari</figcaption></figure></div></li>
-<li><p class="ttl"><span class="topic">Water</span>Unintended Consequences of a Large Irrigation Project for Groundwater Recharge</p><p class="finding">Surface water from the world's largest irrigation canal raised groundwater levels by 80% of baseline.</p></li>
-<li><p class="ttl"><span class="topic">Climate</span>Thirteenth Month of a Drought Year: Agricultural Shocks and Judicial Outcomes in India</p></li>
-<li><p class="ttl"><span class="topic">Water</span>The Agrarian Cost of Groundwater Depletion in India</p></li>
-</ul>
-</section>
-
-<section class="status-sec region" id="china" aria-labelledby="h-china">
-<h2 id="h-china">China</h2>
-<ul class="plist">
-<li><p class="ttl"><span class="topic">Climate</span>The Cold, Hard Truth: Evidence from Heterogeneous Snowpack Insulation Effect on Winter Wheat Yields in China</p><p class="finding">Each additional freezing degree day cuts winter wheat yields by 2.37 kg/ha. Snow cover protects yields on the most productive farms.</p></li>
-</ul>
-</section>
-
-<section class="status-sec region" id="africa" aria-labelledby="h-africa">
-<h2 id="h-africa">Sub-Saharan Africa</h2>
-<ul class="plist">
-<li><p class="ttl"><span class="topic">Forests</span>The Human Well-Being Outcomes of Tree Plantations in Sub-Saharan Africa: A Reassessment of Evidence Using Longitudinal Subnational-Year Data</p><p class="finding">Across 12 countries, more land in tree plantations raised a wealth index by over a third and income per capita by $205–395 a year, but did not move the Human Development Index.</p><div class="figs"><figure><a href="images/figures/fpe-map.webp"><img src="images/figures/fpe-map.webp" alt="Map: Countries and regions in the study" loading="lazy"></a><figcaption><span>Map</span> Countries and regions in the study</figcaption></figure></div></li>
-<li><p class="ttl"><span class="topic">Forests</span>Disease at the Root, Deforestation at the Edge: Cassava Epidemic and Deforestation in Uganda</p></li>
-</ul>
-</section>
-
+<div id="map" class="rmap" role="img" aria-label="World map highlighting Brazil, the United States, India, China and Sub-Saharan Africa. Full paper list on the Research page."></div>
 <p class="map-credit">Full citations and PDFs are on the <a href="research.html">Research</a> page. Boundaries: Natural Earth.</p>
 
 </main>
@@ -104,16 +48,42 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script>
-// Shaded countries; section = id of the paper list below the map.
+// HOW TO EDIT: each shaded country (3-letter code) lists its papers as [topic, title].
+// Topics: Land, Forests, Water, Climate, Health, Pollution. Titles should match research.html.
 var REGIONS = {
-  BRA: { section: 'brazil' },
-  USA: { section: 'usa' },
-  IND: { section: 'india' },
-  CHN: { section: 'china' },
-  AFR: { section: 'africa' }  // every Sub-Saharan country
+  BRA: { name: 'Brazil', papers: [
+    ['Land', 'Land Registration and Conflict Reduction: Evidence from the Brazilian Amazon'],
+    ['Forests', 'Beyond the Canopy: How Satellite Data Detection Thresholds Influence Policy Evaluation and Deforestation Behavior'],
+    ['Land', 'Collective Property Rights Lead to Secondary Forest Growth in the Brazilian Amazon'],
+    ['Land', 'Clearing to Claim: The Perverse Incentives of Land Regularization in the Brazilian Amazon'],
+    ['Forests', 'Improving Environmental Outcomes Through Investments in Local Governance: Evidence from Brazil'],
+    ['Forests', 'Drought-Induced Deforestation in the Brazilian Amazon']
+  ]},
+  USA: { name: 'United States', papers: [
+    ['Health', 'Primary Care, Weather, and the Missed Opportunity for Savings'],
+    ['Water', 'Gross External Damages of Water Pollution in the United States'],
+    ['Forests', 'Forest Disease, Wildfire Risk, and Recreational Welfare: Evidence from the USA'],
+    ['Pollution', 'Hazardous Waste Sites Alter Regional Soil Chemistry: Evidence from 80,000 Soil Tests in Tennessee']
+  ]},
+  IND: { name: 'India', papers: [
+    ['Forests', 'Incentives for Rural Households to Establish Tree Cover on Agricultural Land in Andhra Pradesh, India'],
+    ['Water', 'Unintended Consequences of a Large Irrigation Project for Groundwater Recharge'],
+    ['Climate', 'Thirteenth Month of a Drought Year: Agricultural Shocks and Judicial Outcomes in India'],
+    ['Water', 'The Agrarian Cost of Groundwater Depletion in India']
+  ]},
+  CHN: { name: 'China', papers: [
+    ['Climate', 'The Cold, Hard Truth: Evidence from Heterogeneous Snowpack Insulation Effect on Winter Wheat Yields in China']
+  ]},
+  AFR: { name: 'Sub-Saharan Africa', papers: [  // shades every Sub-Saharan country
+    ['Forests', 'The Human Well-Being Outcomes of Tree Plantations in Sub-Saharan Africa: A Reassessment of Evidence Using Longitudinal Subnational-Year Data']
+  ]}
 };
-var AFRICA_SUBREGIONS = ['Eastern Africa', 'Middle Africa', 'Southern Africa', 'Western Africa'];
+// Uganda also has its own paper, listed above the Sub-Saharan one.
+REGIONS.UGA = { name: 'Uganda', papers: [
+  ['Forests', 'Disease at the Root, Deforestation at the Edge: Cassava Epidemic and Deforestation in Uganda']
+].concat(REGIONS.AFR.papers) };
 
+var AFRICA_SUBREGIONS = ['Eastern Africa', 'Middle Africa', 'Southern Africa', 'Western Africa'];
 var COLORS = { region: '#990000', land: '#E4E4E4', sea: '#F7F7F5' };
 
 function regionOf(p) {
@@ -123,14 +93,13 @@ function regionOf(p) {
 }
 
 function popupHtml(name, r) {
-  var sec = document.getElementById(r.section);
-  var titles = Array.prototype.map.call(sec.querySelectorAll('.ttl'), function (t) {
-    return '<li>' + t.innerHTML + '</li>';
+  var items = r.papers.map(function (pp) {
+    return '<li><span class="topic">' + pp[0] + '</span>' + pp[1] + '</li>';
   }).join('');
-  return '<p class="pop-h">' + sec.querySelector('h2').textContent +
-    (sec.id === 'africa' ? ' <span>(' + name + ')</span>' : '') + '</p>' +
-    '<ul class="pop-l">' + titles + '</ul>' +
-    '<a href="#' + r.section + '">More below</a>';
+  return '<p class="pop-h">' + r.name +
+    (r === REGIONS.AFR ? ' <span>(' + name + ')</span>' : '') + '</p>' +
+    '<ul class="pop-l">' + items + '</ul>' +
+    '<a href="research.html">Full citations</a>';
 }
 
 var map = L.map('map', {
@@ -152,7 +121,7 @@ fetch('data/countries.geojson').then(function (r) { return r.json(); }).then(fun
     onEachFeature: function (f, layer) {
       var r = regionOf(f.properties);
       if (!r) { layer.options.interactive = false; return; }
-      layer.bindPopup(popupHtml(f.properties.name, r), { maxWidth: 300 });
+      layer.bindPopup(popupHtml(f.properties.name, r), { maxWidth: 320 });
       layer.on('mouseover', function () { layer.setStyle({ weight: 2, color: '#1B1F23' }); layer.bringToFront(); });
       layer.on('mouseout', function () { layer.setStyle({ weight: 0.8, color: '#FFFFFF' }); });
     }
