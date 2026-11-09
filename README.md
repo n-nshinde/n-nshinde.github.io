@@ -50,6 +50,8 @@ On GitHub, open any file → pencil icon → edit → **Commit changes**. The si
 
 - New paper: copy one `<li>` in `research.html` and change the text. Format: title, then "(with coauthors) Year. *Journal*, volume: pages." and the links. If it is recent, also update "Recent papers" in `index.html`.
 - New course: copy one `<article class="row">` in `teaching.html`.
+- Update the book sample: rebuild `E340_Textbook/build/sample_ch01/sample_ch01.tex` (latexmk, with `TEXINPUTS=style/vendor//:`), then copy the PDF to `book/e340-book-chapter1-sample.pdf`.
+- New student resource: add an `<li>` under the right `<p class="sub">` group in `resources.html`; check the link opens first.
 - Titles, coauthor order and years follow the journal record (Crossref/DOI) for published papers and the CV for working papers. Keep `index.html` and `research.html` consistent.
 - New paper also goes on the map: add a `['Topic', 'Title']` line under its country in the `REGIONS` list at the bottom of `map.html` (topics: Land, Forests, Water, Climate, Health, Pollution). A new country: add its 3-letter code to `REGIONS`.
 
@@ -68,9 +70,9 @@ Buy a domain (e.g., nileshshinde.com, ~$12/yr), then GitHub **Settings → Pages
 | index.html | Home |
 | research.html | Research: journal articles, book chapters, working papers |
 | map.html | Research Map: world map with study countries shaded; clicking a country lists its papers with topic labels (uses data/countries.geojson, Natural Earth) |
-| teaching.html | Teaching |
+| teaching.html | Teaching: E340 row (syllabus) + "Course Book" paragraph (Chapter 1 sample PDF in `book/`; full draft by email only) |
 | workshop.html | Community: Social Cost of Water Pollution Workshop, Dhar India Studies Program, CLACS |
-| resources.html | Students: working with me + getting started in research (four steps that expand on click; each is a `<details>` block) |
+| resources.html | Students: working with me + getting started in research (four steps that expand on click; each is a `<details>` block). Step 4 "Work with spatial, satellite and survey data" has sub-groups (`<p class="sub">`): Learn the tools, Open satellite and geospatial data, Satellite data in economics, Survey data |
 | style.css | All styling (IU crimson #990000 accent on white) |
 | data/countries.geojson | Country outlines for the Research Map (Natural Earth, public domain) |
 
