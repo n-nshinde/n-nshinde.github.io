@@ -6,7 +6,7 @@ Plain HTML + CSS. No build step. Hosted free on GitHub Pages.
 
 1. Sign in to GitHub as **n-nshinde**.
 2. Click **+ → New repository**. Name it exactly `n-nshinde.github.io`. Set it to **Public**. Click **Create repository**.
-3. On the new repo page click **uploading an existing file**. Drag in everything inside this folder, including the `papers`, `images`, `syllabi` and `data` folders. Click **Commit changes**.
+3. On the new repo page click **uploading an existing file**. Drag in everything inside this folder, including the `papers`, `images`, `syllabi`, `book` and `data` folders. Click **Commit changes**.
 4. Go to **Settings → Pages**. Under "Build and deployment", Source = **Deploy from a branch**, Branch = **main**, folder **/ (root)**. Save.
 5. After 1–2 minutes your site is live at **https://n-nshinde.github.io**.
 
@@ -14,6 +14,7 @@ Plain HTML + CSS. No build step. Hosted free on GitHub Pages.
 
 - **Photo:** `images/shinde.jpg`.
 - **Syllabus:** `syllabi/e340-syllabus.pdf`.
+- **Book sample:** `book/e340-book-chapter1-sample.pdf` (Chapter 1 of the E340 textbook draft, notes hidden). Rebuild from `E340_Textbook/build/sample_ch01/sample_ch01.tex`; the full draft is shared by email only.
 - **Paper PDFs** live in `papers/`, named `venueYEAR-short-title.pdf` for published papers, `rr-short-title.pdf` for revise-and-resubmits and `wp-short-title.pdf` for working papers:
 
 | Paper | File |
