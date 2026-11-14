@@ -14,6 +14,7 @@ Plain HTML + CSS. No build step. Hosted free on GitHub Pages.
 
 - **Photo:** `images/shinde.jpg`.
 - **Syllabus:** `syllabi/e340-syllabus.pdf`.
+- **CV:** `cv.pdf`, linked from the Home page. Source: `~/Documents/_work_docs/cv/shinde-cv.tex`; after editing, recompile and copy the PDF here as `cv.pdf`.
 - **Book sample:** `book/e340-book-chapter1-sample.pdf` (Chapter 1 of the E340 textbook draft, notes hidden). Rebuild from `E340_Textbook/build/sample_ch01/sample_ch01.tex`; the full draft is shared by email only.
 - **Paper PDFs** live in `papers/`, named `venueYEAR-short-title.pdf` for published papers, `rr-short-title.pdf` for revise-and-resubmits and `wp-short-title.pdf` for working papers:
 
