@@ -14,7 +14,7 @@ Plain HTML + CSS. No build step. Hosted free on GitHub Pages.
 
 - **Photo:** `images/shinde.jpg`.
 - **Syllabus:** `syllabi/e340-syllabus.pdf`.
-- **CV:** `cv.pdf`, linked from the Home page. Source: `~/Documents/_work_docs/cv/shinde-cv.tex`; after editing, recompile and copy the PDF here as `cv.pdf`.
+- **CV:** `cv.pdf`, linked from the Home page ("CV" button). Source: `~/Documents/_work_docs/cv/shinde-cv.tex` (kept outside this folder). Plain black-and-white economics style (modeled on Joseph Shapiro's CV). By choice it has no years for degrees, positions or student awards, and no phone, address, personal email, ORCID or Google Scholar.
 - **Book sample:** `book/e340-book-chapter1-sample.pdf` (Chapter 1 of the E340 textbook draft, notes hidden). Rebuild from `E340_Textbook/build/sample_ch01/sample_ch01.tex`; the full draft is shared by email only.
 - **Paper PDFs** live in `papers/`, named `venueYEAR-short-title.pdf` for published papers, `rr-short-title.pdf` for revise-and-resubmits and `wp-short-title.pdf` for working papers:
 
@@ -52,6 +52,7 @@ On GitHub, open any file → pencil icon → edit → **Commit changes**. The si
 - New paper: copy one `<li>` in `research.html` and change the text. Format: title, then "(with coauthors) Year. *Journal*, volume: pages." and the links. If it is recent, also update "Recent papers" in `index.html`.
 - New course: copy one `<article class="row">` in `teaching.html`.
 - Update the book sample: rebuild `E340_Textbook/build/sample_ch01/sample_ch01.tex` (latexmk, with `TEXINPUTS=style/vendor//:`), then copy the PDF to `book/e340-book-chapter1-sample.pdf`.
+- Update the CV: edit `~/Documents/_work_docs/cv/shinde-cv.tex`, run `pdflatex shinde-cv.tex` there (or use Overleaf), copy `shinde-cv.pdf` here as `cv.pdf`, then upload `cv.pdf`. Keep paper titles and status the same as `research.html`.
 - New student resource: add an `<li>` under the right `<p class="sub">` group in `resources.html`; check the link opens first.
 - Titles, coauthor order and years follow the journal record (Crossref/DOI) for published papers and the CV for working papers. Keep `index.html` and `research.html` consistent.
 - New paper also goes on the map: add a `['Topic', 'Title']` line under its country in the `REGIONS` list at the bottom of `map.html` (topics: Land, Forests, Water, Climate, Health, Pollution). A new country: add its 3-letter code to `REGIONS`.
@@ -69,6 +70,7 @@ Buy a domain (e.g., nileshshinde.com, ~$12/yr), then GitHub **Settings → Pages
 | File | Page |
 |---|---|
 | index.html | Home |
+| cv.pdf | CV (linked from Home; built from `~/Documents/_work_docs/cv/shinde-cv.tex`) |
 | research.html | Research: journal articles, book chapters, working papers |
 | map.html | Research Map: world map with study countries shaded; clicking a country lists its papers with topic labels (uses data/countries.geojson, Natural Earth) |
 | teaching.html | Teaching: E340 row (syllabus) + "Course Book" paragraph (Chapter 1 sample PDF in `book/`; full draft by email only) |
