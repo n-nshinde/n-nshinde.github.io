@@ -26,8 +26,8 @@ Plain HTML + CSS. No build step. Hosted free on GitHub Pages.
 | PNAS 2023 — Collective Property Rights | papers/pnas2023-collective-property-rights.pdf |
 | Health Affairs Scholar 2026 — Primary Care and Weather | papers/has2026-primary-care-weather.pdf |
 | FPE 2024 — Tree Plantations in Sub-Saharan Africa | papers/fpe2024-tree-plantations.pdf |
-| Book chapter 2022 — Tree Cover in Andhra Pradesh | papers/chapter2022-tree-cover-andhra-pradesh.pdf |
-| R&R JDE — Irrigation and Groundwater Recharge | papers/rr-irrigation-groundwater-recharge.pdf |
+| Book chapter 2022 — Tree Cover in Andhra Pradesh (published Routledge chapter, labelled "PDF") | papers/chapter2022-tree-cover-andhra-pradesh.pdf |
+| R&R JDE — Unintended Benefits of Large Irrigation Projects (SSRN 5439837) | papers/rr-irrigation-groundwater-recharge.pdf |
 | WP — Gross External Damages of Water Pollution | papers/wp-water-pollution-damages.pdf |
 | WP — Clearing to Claim (RCI WP 14) | papers/wp-clearing-to-claim.pdf |
 | WP — Local Governance in Brazil | papers/wp-local-governance-brazil.pdf |
@@ -54,6 +54,7 @@ On GitHub, open any file → pencil icon → edit → **Commit changes**. The si
 - Update the book sample: rebuild `E340_Textbook/build/sample_ch01/sample_ch01.tex` (latexmk, with `TEXINPUTS=style/vendor//:`), then copy the PDF to `book/e340-book-chapter1-sample.pdf`.
 - Update the CV: edit `~/Documents/_work_docs/cv/shinde-cv.tex`, run `pdflatex shinde-cv.tex` there (or use Overleaf), copy `shinde-cv.pdf` here as `cv.pdf`, then upload `cv.pdf`. Keep paper titles and status the same as `research.html`.
 - New student resource: add an `<li>` under the right `<p class="sub">` group in `resources.html`; check the link opens first.
+- Coauthor names: copy them exactly as printed on the paper (e.g. "Mohammad Mainul Hoque", "Elaine L. Hill", "Isaiah Bryant-Sheth", "Danae Hernandez-Cortes"); for grants and unpublished work, check each person's own web page.
 - Titles, coauthor order and years follow the journal record (Crossref/DOI) for published papers and the CV for working papers. Keep `index.html` and `research.html` consistent.
 - New paper also goes on the map: add a `['Topic', 'Title']` line under its country in the `REGIONS` list at the bottom of `map.html` (topics: Land, Forests, Water, Climate, Health, Pollution). A new country: add its 3-letter code to `REGIONS`.
 
@@ -83,5 +84,6 @@ Buy a domain (e.g., nileshshinde.com, ~$12/yr), then GitHub **Settings → Pages
 
 - **Open access (CC BY / CC BY-NC-ND):** post the publisher PDF, labelled "PDF (open access)". This covers PNAS 2023, Health Affairs Scholar 2026 and JEEM 2025.
 - **Not open access (Elsevier JEEM 2027, Cambridge EDE 2026):** the site shows "Email me for a copy" + DOI (sending a copy to individual colleagues and students is allowed). Their publisher PDFs are in `papers/` for your own reference but are not linked; anything uploaded to this public repo can be downloaded by anyone, so leave them out of uploads to keep them private. To post them properly, use your accepted manuscript (the final version after peer review, before typesetting) with a cover page, labelled "Author manuscript". For EDE you can also add a free Cambridge Core Share link (article page → Share).
-- **Author manuscripts already posted:** FPE 2024 and the Routledge chapter. Each has a cover page with the citation, DOI link and required licence/notice text (Elsevier: CC BY-NC-ND 4.0; Routledge: "Accepted Manuscript of a book chapter published by Routledge…"). Add the same kind of cover page to future accepted manuscripts.
+- **Author manuscripts already posted:** FPE 2024. It has a cover page with the citation, DOI link and required licence text (Elsevier: CC BY-NC-ND 4.0). Add the same kind of cover page to future accepted manuscripts.
+- **Routledge chapter:** `papers/chapter2022-tree-cover-andhra-pradesh.pdf` is the published (typeset) chapter, book pp. 154–180, labelled "PDF" — your choice (2026-11-14) over the accepted manuscript, which is kept at `~/Documents/_work_docs/chapter2022-tree-cover-andhra-pradesh-AAM.pdf`.
 - **Working papers:** labelled "Working paper draft".
