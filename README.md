@@ -13,6 +13,7 @@ Plain HTML + CSS. No build step. Hosted free on GitHub Pages.
 ## Files on the site
 
 - **Photo:** `images/shinde.jpg`.
+- **Highlight figures (Home):** `images/highlights/*.png|jpg`, one main-result figure or map cropped from each paper's PDF (pages rendered with PyMuPDF; SSRN "Preprint not peer reviewed" stamp removed from the image only). Each highlight `<li class="has-fig">` has the text on the left and the figure (240 px, links to full size) on the right; it stacks on phones. To add one, crop the figure to about 1100 px wide (JPEG for maps, PNG for plots) and copy an existing `<li>`.
 - **Syllabus:** `syllabi/e340-syllabus.pdf`.
 - **CV:** `cv.pdf`, linked from the Home page ("CV" button). Source: `~/Documents/_work_docs/cv/shinde-cv.tex` (kept outside this folder). Plain black-and-white economics style (modeled on Joseph Shapiro's CV). By choice it has no years for degrees, positions or student awards, and no phone, address, personal email, ORCID or Google Scholar.
 - **Book sample:** `book/e340-book-chapter1-sample.pdf` (Chapter 1 of the E340 textbook draft, notes hidden). Rebuild from `E340_Textbook/build/sample_ch01/sample_ch01.tex`; the full draft is shared by email only.
@@ -43,7 +44,23 @@ For published papers, check each journal's sharing policy: Elsevier (JEEM, Fores
 
 Upload the changed files with **Add file → Upload files** (same names replace the old ones), then wait 1–2 minutes and hard-refresh with **Cmd + Shift + R**.
 
-Every page loads `style.css?v=9`. After changing `style.css`, bump the number (`?v=10`, …) in all six HTML files so browsers fetch the new styles.
+**Waiting to upload (changed locally on 2026-11-14):**
+- `index.html`, `style.css`, folder `images/highlights/` — Home highlight figures
+- `research.html`, `map.html`, `teaching.html`, `workshop.html`, `resources.html` — `style.css?v=10`; irrigation title, Hoque name, chapter "PDF" label
+- `cv.pdf` — corrected coauthor names, Matt Woerman on Agrarian Cost, irrigation title
+- `papers/chapter2022-tree-cover-andhra-pradesh.pdf` — published Routledge chapter
+- `README.md`
+
+**Also waiting to upload (changed locally on 2026-11-18):**
+- `resources.html` — new Students page: "Working with me" cards, "Planning your path", steps 5–6, The Remix, Chernozhukov book, Data Science for Public Policy
+- `style.css` — new "Students page" styles at the end (cache number now `?v=11`)
+- `index.html`, `research.html`, `map.html`, `teaching.html`, `workshop.html` — only the `style.css?v=11` change
+
+Not for upload yet (pilots, not linked): `research-pilot.html`, `resources-pilot.html`, folder `images/papers/`.
+
+Clear this list once they are live.
+
+Every page loads `style.css?v=11`. After changing `style.css`, bump the number (`?v=12`, …) in all six HTML files so browsers fetch the new styles.
 
 ## Edit later
 
@@ -57,6 +74,10 @@ On GitHub, open any file → pencil icon → edit → **Commit changes**. The si
 - Coauthor names: copy them exactly as printed on the paper (e.g. "Mohammad Mainul Hoque", "Elaine L. Hill", "Isaiah Bryant-Sheth", "Danae Hernandez-Cortes"); for grants and unpublished work, check each person's own web page.
 - Titles, coauthor order and years follow the journal record (Crossref/DOI) for published papers and the CV for working papers. Keep `index.html` and `research.html` consistent.
 - New paper also goes on the map: add a `['Topic', 'Title']` line under its country in the `REGIONS` list at the bottom of `map.html` (topics: Land, Forests, Water, Climate, Health, Pollution). A new country: add its 3-letter code to `REGIONS`.
+
+## Design
+
+The look is deliberately simple: IBM Plex Sans, IU crimson links, one accent colour. A Joseph Shapiro-style theme (Georgia serif, black text, blue links, uppercase headings, indented coauthor/journal lines) was previewed on 2026-11-14 and not adopted for now; it is a ~60-line CSS override on `style.css` if you want it later.
 
 ## Repository visibility
 
